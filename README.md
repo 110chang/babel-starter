@@ -17,6 +17,8 @@ In your repository,
 git remote add babel-starter https://github.com/110chang/babel-starter.git
 git pull babel-starter master
 git remote rm babel-starter
+npm i
+karma start
 ```
 
 Have fun!
