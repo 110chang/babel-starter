@@ -5,11 +5,13 @@ babel-starter
 
 Starter kit for small es6 script.
 
-Karma/Jamine/Browserify
+Karma/Jasmine/Browserify
 
 ## Usage
 
 Create your own repository.
+
+In your repository,
 
 ```bash
 git remote add babel-starter https://github.com/110chang/babel-starter.git
