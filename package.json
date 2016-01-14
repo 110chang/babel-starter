@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Babel coding starter kit for small module",
   "main": "index.js",
+  "repository": "https://github.com/110chang/babel-starter.git"
   "scripts": {
     "test": "karma start"
   },
