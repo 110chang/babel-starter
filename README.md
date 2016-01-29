@@ -21,4 +21,10 @@ npm i
 karma start
 ```
 
+If you aren't installed Karma client
+
+```bash
+npm i -g karma-cli
+```
+
 Have fun!
