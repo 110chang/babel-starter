@@ -17,9 +17,12 @@ module.exports = function(config) {
     files: [
       // RegeneratorRuntime is not defined
       // ref. http://stackoverflow.com/questions/28976748/regeneratorruntime-is-not-defined
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/jasmine-jquery/lib/jasmine-jquery.js',
       'node_modules/babel-polyfill/browser.js',
       'src/*.js',
-      'spec/*Spec.js'
+      'spec/*Spec.js',
+      { pattern: 'fixtures/**', included: false }
     ],
 
 
