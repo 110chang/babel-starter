@@ -14,7 +14,7 @@ function* greet() {
 describe('Sample', () => {
 
   beforeEach(() => {
-
+    jasmine.getFixtures().fixturesPath = 'base/fixtures';
   });
 
   it('can use classes', () => {
@@ -28,6 +28,11 @@ describe('Sample', () => {
     expect(greeter.next().value).toBe('works');
     expect(greeter.next().value).toBe('fine!');
     expect(greeter.next().done).toBeTruthy();
+  });
+
+  it('can use fixtures', () => {
+    let fixture = readFixtures('fixture.json');
+    expect(fixture).toBe('[{"this":"is","a":"json","fixture":"!"}]')
   });
 });
 
