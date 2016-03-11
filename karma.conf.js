@@ -10,7 +10,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['browserify', 'jasmine'],
+    frameworks: ['browserify', 'jasmine-jquery', 'jasmine'],
 
 
     // list of files / patterns to load in the browser
@@ -19,7 +19,8 @@ module.exports = function(config) {
       // ref. http://stackoverflow.com/questions/28976748/regeneratorruntime-is-not-defined
       'node_modules/babel-polyfill/browser.js',
       'src/*.js',
-      'spec/*Spec.js'
+      'spec/*Spec.js',
+      { pattern: 'fixtures/**', included: false }
     ],
 
 
@@ -41,7 +42,7 @@ module.exports = function(config) {
       'transform': ['babelify']
     },
 
-    plugins: ['karma-browserify', 'karma-jasmine', 'karma-chrome-launcher'],
+    plugins: ['karma-browserify', 'karma-jasmine-jquery', 'karma-jasmine', 'karma-chrome-launcher'],
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
