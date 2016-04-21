@@ -3,10 +3,8 @@
 
 //clazz.js
 
-class Clazz {
+export default class Clazz {
   works() {
     return 'fine!';
   }
 }
-
-module.exports = Clazz;
